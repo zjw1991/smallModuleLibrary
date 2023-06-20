@@ -1,0 +1,39 @@
+
+ <!-- pages/test/test.wxml -->
+ <view class="top flex">
+    <view class="top_left" style="width:{{width}}px;">时间</view>
+    <view class="top_right flex" style="width:{{wHeight-width}}px;margin-left:-{{left}}px;">
+        <view class="top_info" style="min-width:{{width}}px;" >代理人</view>
+        <view class="top_info" style="min-width:{{width}}px;" >新增线索</view>
+        <view class="top_info" style="min-width:{{width}}px;" >新增报备</view>
+        <view class="top_info" style="min-width:{{width}}px;" >新增面试成功</view>
+        <view class="top_info" style="min-width:{{width}}px;" >新增入职</view>
+    </view>
+</view>
+<view class="perch"></view>
+<view class="bottom flex">
+    <view class="bottom_left" style="width:{{width}}px;">
+        <view class="bottom_left_date" style="width:{{width}}px;" wx:for="{{list}}" wx:key="index">
+            <view>{{item.mydateStr}}</view>
+        </view>
+    </view>
+    <scroll-view scroll-x="true" bindscroll="scroll" throttle="{{false}}" class="bottom_right" style="width:{{wHeight-width}}px;">
+        <view class="flex" wx:for="{{list}}">
+          <view class="bottom_right_ver" style="min-width:{{width}}px;" >
+                {{item.agentName}}
+            </view>
+            <view class="bottom_right_ver" style="min-width:{{width}}px;" >
+                {{item.clueNum}}
+            </view>
+            <view class="bottom_right_ver" style="min-width:{{width}}px;" >
+              {{item.reportNum}}
+            </view>
+            <view class="bottom_right_ver" style="min-width:{{width}}px;" >
+              {{item.interviewSuccessNum}}
+            </view>
+            <view class="bottom_right_ver" style="min-width:{{width}}px;" >
+              {{item.onboardingNum}}
+            </view>
+        </view>
+    </scroll-view>
+</view>

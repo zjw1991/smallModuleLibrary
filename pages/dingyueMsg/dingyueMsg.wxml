@@ -1,0 +1,11 @@
+
+
+
+<button bindtap="dingyue">订阅</button>
+
+<view>订阅状态：
+  <view wx:for="{{dingyueState}}">
+    <view wx:if="{{item == 'accept'}}">接受了通知{{item}}</view>
+    <view wx:else>拒绝了通知{{item}}</view>
+  </view>
+</view>

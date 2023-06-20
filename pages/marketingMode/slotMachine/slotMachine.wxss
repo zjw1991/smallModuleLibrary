@@ -1,0 +1,23 @@
+/* pages/slot-machine/index.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sol-button {
+  width: 100px;
+}
+
+.btn-group {
+  margin-top: 40rpx;
+  display: flex;
+  align-items: center;
+}
+
+.sol-button {
+  border:1px solid #333;
+  background:#ccc;
+  margin-right: 20rpx;
+}

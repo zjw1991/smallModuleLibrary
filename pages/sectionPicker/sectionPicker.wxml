@@ -1,0 +1,9 @@
+
+
+<view class="dateContent" bindtap="pickerShow">
+  <text class="comDate">{{startTime}}</text> <text>～</text> <text class="comDate">{{endTime}}</text>
+</view>
+
+
+<time-picker pickerShow="{{isPickerShow}}" id="picker" wx:if="{{isPickerRender}}" bind:clearPicker="pickerClear" bind:hidePicker="pickerHide" bind:setPickerTime="setPickerTime"
+  config="{{pickerConfig}}"></time-picker>

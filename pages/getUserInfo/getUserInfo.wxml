@@ -1,0 +1,9 @@
+
+
+
+<button lang="zh_CN" bindtap="onGotUserInfo" type="normal">获取用户基本信息</button> 
+<text class="title" style="word-break:break-all;">用户信息：{{userinfo}}</text>
+
+
+<!--获取手机号后端配合-->
+<button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">获取用户手机号</button>

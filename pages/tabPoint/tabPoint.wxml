@@ -1,0 +1,13 @@
+
+
+<view class="list">
+    <view class="a" bindtap='jumpTo' data-myid="list0">list0</view>
+    <view class="a" bindtap='jumpTo' data-myid="list1">list1</view>
+    <view class="a" bindtap='jumpTo' data-myid="list2">list2</view>
+</view>
+
+<scroll-view  class="ab" scroll-into-view="{{toViewid}}" scroll-y="true" scroll-with-animation="true">
+    <view wx:key="index"  class="b" id="list0">11111111</view>
+    <view wx:key="index"  class="b" id="list1">2222222</view>
+    <view wx:key="index"  class="b" id="list2">3333333333</view>
+</scroll-view>

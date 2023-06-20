@@ -1,0 +1,9 @@
+<view class='ui_uploader_cell'>
+    <view class='ui_uploader_item' wx:for="{{picUrlList}}" wx:key="{{index}}">
+        <icon class='ui_uploader_item_icon' bindtap='clearImg' data-index="{{index}}" type="clear" size="20" color="red"/>
+        <image bindtap='showImg' data-index="{{index}}" src='{{item}}'></image>
+    </view>
+    <view class='ui_uploader' bindtap='chooseImage' wx:if="{{showUpload}}">
+      <text class="uploadimgText">上传照片</text>
+    </view>
+</view>

@@ -1,0 +1,6 @@
+
+
+<loading id='dialog'></loading>
+
+
+<web-view src="{{url}}"></web-view>

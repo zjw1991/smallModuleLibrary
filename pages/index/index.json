@@ -1,0 +1,6 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "showMask": "../../components/mask/mask"
+  }
+}

@@ -1,0 +1,2 @@
+<!--带有透明背景遮罩，防止点击按钮同时在点击其他地方,需要时候引用本组件-->
+<view class='pop_loading' hidden="{{!isShow}}"></view>

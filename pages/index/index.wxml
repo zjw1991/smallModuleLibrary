@@ -1,0 +1,57 @@
+<headerNavbar navbar-data='{{navbarData}}'></headerNavbar>
+
+<showMask id="showMask"></showMask>
+
+
+<view class="kind-list" style="padding-bottom:{{toBottomHeight}}px;">
+		<block wx:for-items="{{componentsList}}" wx:key="index">
+			<view class="list-title">{{item.title}}（{{item.num}}）</view>
+
+			<view wx:for-items="{{item.children}}" wx:key="index" class="kind-list-item">
+				<view wx:if="{{item.show}}" id="{{item.id}}" class="kind-list-item-hd">
+					<navigator url="{{item.url}}" class="navigator" hover-class="none">
+						<view class="kind-list-text">{{item.name}}</view>
+					</navigator>
+				</view>
+			</view>
+
+		</block>
+	</view>
+
+
+<!--底部自定义tabbar-->
+<van-tabbar active="{{ activeIndex }}"  active-color="#3281ff"
+inactive-color="#666" bind:change="onChange">
+  <van-tabbar-item >
+    <image
+      slot="icon"
+      src="{{ icon1.normal }}"
+      mode="aspectFit"
+      style="width: 30px; height: 18px;"
+    />
+    <image
+      slot="icon-active"
+      src="{{ icon1.active }}"
+      mode="aspectFit"
+      style="width: 30px; height: 18px;"
+    />
+    首页
+  </van-tabbar-item>
+
+  <van-tabbar-item>
+    <image
+      slot="icon"
+      src="{{ icon2.normal }}"
+      mode="aspectFit"
+      style="width: 30px; height: 18px;"
+    />
+    <image
+      slot="icon-active"
+      src="{{ icon2.active }}"
+      mode="aspectFit"
+      style="width: 30px; height: 18px;"
+    />
+    我的
+  </van-tabbar-item>
+
+</van-tabbar>

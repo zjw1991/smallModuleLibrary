@@ -1,0 +1,17 @@
+
+
+<view class="page-body {{!openflag?'hiddenView':''}}">
+  <view class="page-section">
+    <view class="rich-text-wrp my_flex">
+        <text class='run'>开始时间:</text>
+        <text class='my_flexR ' bindtap='tap'>{{starttime}} </text>
+    </view>
+  </view>
+</view>
+
+ <!-- 引用DateTimePicker -->
+<view hidden='{{openflag}}'>
+    <DateTimePicker id="DateTimePicker" openflag="{{openflag}}" timevalue="{{value}}" years="{{years}}" months="{{months}}" days="{{days}}" hours="{{hours}}" minutes="{{minutes}}" bind:canslebtn="canslebtn" showPickAllBtn="{{showPickAllBtn}}" bind:closebtn="closebtn" bind:bindChangeEvent="bindChange" bind:pickAllBtn="pickAllBtn">
+    </DateTimePicker>
+</view>
+

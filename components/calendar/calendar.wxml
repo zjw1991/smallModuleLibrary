@@ -1,0 +1,30 @@
+<!--component/calendar/calendar.wxml-->
+
+
+<view class="main">
+  <view class="current-time">
+    <view class="pre" bindtap="prevMonth">＜</view>
+    <view class="time">{{nowYear}}-{{nowMonth}}</view>
+    <view class="next" bindtap="nextMonth">＞</view>
+  </view>
+  <view class="calendar-week">
+    <view class="weekday" wx:for="{{ calendarWeek }}" wx:key="index" data-item='{{item}}'>{{item}}</view>
+  </view>
+  <view style="position:relative;">
+    <swiper style="height:{{swiperHeight}}px;" current="{{calendarPageIndex}}"circular="{{true}}"
+      bindchange="changeSwiper" bindanimationfinish="transitionStop" >
+      <block wx:for="{{calendarAllList}}" wx:for-item="currentCalendar" wx:key="index">
+      <swiper-item>
+        <view class="day-box">
+          <view
+            class="day-item {{ item.isLastMon || item.isNextMon || item.week == 6 || item.week == 0 ? 'disable':''}}"
+            wx:for="{{currentCalendar.list}}" wx:key="index" data-item="{{item}}" data-index="{{index}}">
+            <view>{{ item.isNow?'今天': item.day }}</view>
+          </view>
+        </view>
+      </swiper-item>
+      </block>
+      
+    </swiper>
+  </view>
+</view>

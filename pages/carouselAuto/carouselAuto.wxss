@@ -1,0 +1,21 @@
+.swiper image {
+  width: 100%;
+  height: auto;
+}
+
+/* 修改指示点 */
+/* 默认指示点的样式 */
+.swiper .wx-swiper-dot {
+  width: 15rpx;
+  height: 15rpx;
+  background: red;
+  border-radius: 15rpx;
+}
+ 
+/* 选中指示点的样式 */
+.swiper .wx-swiper-dot.wx-swiper-dot-active {
+    width: 30rpx;
+    height: 15rpx;
+    background: #000;
+    border-radius: 15rpx;
+}

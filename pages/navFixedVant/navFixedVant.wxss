@@ -1,0 +1,12 @@
+
+
+.tabWrap{
+  height:300rpx;
+  border:1px solid red;
+  background: #fff;
+}
+.listWrap{
+  height:1500rpx;
+  border:1px solid blue;
+  background: #fff;
+}

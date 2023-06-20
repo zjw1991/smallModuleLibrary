@@ -1,0 +1,14 @@
+page{
+  background:var(--themeBackground);
+}
+.kind-list-item {
+  margin: 10rpx 0;
+  background-color: #fff;
+}
+
+.kind-list-item-hd {
+  padding: 10rpx;
+}
+.list-title{
+  font-weight: bold;
+}

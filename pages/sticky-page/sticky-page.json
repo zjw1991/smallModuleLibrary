@@ -1,0 +1,7 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "sticky": "/components/sticky-master/sticky/index",
+    "sticky-item": "/components/sticky-master/sticky-item/index"
+  }
+}

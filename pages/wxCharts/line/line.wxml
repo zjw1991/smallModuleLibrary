@@ -1,0 +1,6 @@
+<headerNavbar navbar-data='{{navbarData}}'></headerNavbar>
+
+<view class="container">
+    <canvas canvas-id="lineCanvas" disable-scroll="true" class="wxCharts" bindtouchstart="touchHandler"></canvas>
+    <button type="primary" bindtap="updateData">更新数据</button>
+</view>

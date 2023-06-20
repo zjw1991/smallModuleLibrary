@@ -1,0 +1,6 @@
+<headerNavbarCustom navbar-data='{{navbarData}}'></headerNavbarCustom>
+
+<image src="../../images/banner1.png" style="width:100%;"  mode="widthFix" />
+<view>薪太软上海科技发展有限公司</view>
+<view style="height:2000rpx;"></view>
+<view>薪太软上海科技发展有限公司</view>

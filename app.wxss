@@ -1,0 +1,20 @@
+
+/* web开发中顶层变量的key名是:root，小程序使用page */
+page{
+  --themeBackground: #f2f3f5;
+}
+
+.container {/* 弹性盒子垂直居中 */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background: #f2f3f5;
+} 
+.wxCharts {
+  width: 100%;
+  height: 200px;
+}
+

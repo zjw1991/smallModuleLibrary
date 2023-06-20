@@ -1,0 +1,5 @@
+
+<loading id='loading'></loading>
+
+
+<button bindtap="toRequest">发起请求</button>

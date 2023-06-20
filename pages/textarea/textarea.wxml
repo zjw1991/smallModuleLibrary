@@ -1,0 +1,7 @@
+
+
+<view class="textareaWrap">
+    <textarea class="areas" placeholder='请输入' minlength="{{min}}" maxlength="{{max}}" bindinput="textareaInput"></textarea>
+    <text class="tips">{{texts}}</text>
+    <text class="currentWordNumber">{{currentWordNumber|0}}/{{max}}</text>
+</view>

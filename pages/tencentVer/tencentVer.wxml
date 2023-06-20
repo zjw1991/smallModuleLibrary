@@ -1,0 +1,3 @@
+
+
+<button bindtap="toTCaptcha">验证</button>

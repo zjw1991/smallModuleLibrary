@@ -1,0 +1,31 @@
+<loading id='loading'></loading>
+<view class="uploadIdcard_wrap">
+        <!--身份证人像面-->
+        <view class='comIdcard'>
+            <image class="idcardImage" data-idcardtype="{{1}}" bindtap='replaceImage' src='{{idcardUrl_rx}}'></image>
+            <view class='ui_uploader' data-idcardtype="{{1}}" bindtap='chooseImage' hidden="{{idcardUrl_rx?true:false}}">
+                <view class="uploadiconWrap"><image mode="widthFix" class="uploadicon" src='../../images/uploadimg.png'></image><text class="addText">添加</text></view>
+                <text class="uploadimgText">上传身份证人像面</text>
+            </view>
+        </view>
+
+        <!--身份证国徽面-->
+        <view class='comIdcard guohui'>
+            <image class="idcardImage" data-idcardtype="{{2}}" bindtap='replaceImage' src='{{idcardUrl_gh}}'></image>
+            <view class='ui_uploader' data-idcardtype="{{2}}" bindtap='chooseImage' hidden="{{idcardUrl_gh?true:false}}">
+                <view class="uploadiconWrap"><image mode="widthFix" class="uploadicon" src='../../images/uploadimg.png'></image><text class="addText">添加</text></view>
+                <text class="uploadimgText">上传身份证国徽面</text>
+            </view>
+        </view>
+
+      </view>
+
+
+      <van-action-sheet
+  show="{{ bottomPopShow }}"
+  actions="{{ actions }}"
+  bind:close="onClose"
+  bind:select="onSelect"
+  bind:cancel="onClose"
+  cancel-text="取消"
+/>

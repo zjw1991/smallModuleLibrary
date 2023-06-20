@@ -1,0 +1,39 @@
+/* pages/wheel/index.wxss */
+.page-wheel {
+  padding: 20rpx;
+}
+
+.page-wheel .sol-button {
+  margin-right: 20rpx;
+}
+
+.wheel-mode {
+  margin-top: 40rpx;
+  display: flex;
+  align-items: center;
+}
+
+.sol-button {
+  appearance: none;
+  border-radius: 4rpx;
+  padding: 0 24rpx;
+  border: 0;
+  box-sizing: border-box;
+  color: inherit;
+  display: inline-block;
+  font-size: 28rpx;
+  height: 66rpx;
+  line-height: 66rpx;
+  outline: 0;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  color: #333333;
+  background-color: #fff;
+  border: 1rpx solid #ebedf0;
+}
+
+.sol-button--danger {
+  color: #fff;
+  background-color: #de3535;
+}

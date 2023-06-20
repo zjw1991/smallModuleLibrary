@@ -1,0 +1,26 @@
+page{
+  background:#fff;
+}
+
+
+.tabclick{
+  width: 232rpx;
+  height: 60rpx;
+  display: inline-block;
+  line-height: 60rpx;
+  text-align: center;
+  background: #F6F6F6;
+  border-radius: 34rpx;
+  font-size: 28rpx;
+  color: rgba(0, 0, 0, 0.7);
+  margin-top:32rpx;
+  margin-right:40rpx;
+
+}
+.is_checked {
+  width: 231rpx;
+  height: 59rpx;
+  border:1px solid #FF6600;
+  background: rgba(255,102,0,0.10);
+  color:#FF6600;
+}

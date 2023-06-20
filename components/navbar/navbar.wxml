@@ -1,0 +1,19 @@
+<view class='navbar-wrap' 
+  style='height:{{navbarHeight}}px;padding-top:{{statusBarHeight}}px;background:{{navbarData.bgColor ? navbarData.bgColor : "#fff"}}'>  
+  <view class="navbar-text"
+    style='line-height:{{navbarBtn.height + navbarBtn.top}}px;color:{{navbarData.textColor ? navbarData.textColor : "#000"}};'>
+    {{navbarData.title ? navbarData.title : "默认标题"}}
+  </view>
+  <view class="navbar-icon"
+    wx:if='{{navbarData.showCapsule ? true : false}}'
+    style="top:{{navbarBtn.top + statusBarHeight}}px;left:{{navbarBtn.right}}px;height:{{navbarBtn.height}}px;background:{{navbarData.btnBgColor ? navbarData.btnBgColor : '#fff'}};border-color:{{navbarData.borderColor ? navbarData.borderColor : 'rgba(0,0,0,0.3)'}}"> 
+      <image class="comIcon" wx:if='{{navbarData.navbarBack ? true : false}}' bindtap="_goBack"  src="/images/navbar_back_{{navbarData.iconColor ? navbarData.iconColor : 'black'}}.png"></image>      
+      <view class="iconLine" wx:if='{{navbarData.navbarLine ? true : false}}' style="border-color:{{navbarData.borderColor ? navbarData.borderColor : 'rgba(0,0,0,0.3)'}}"></view>
+      <image class="comIcon" wx:if='{{navbarData.navbarHome ? true : false}}' bindtap="_goHome" src="/images/navbar_home_{{navbarData.iconColor ? navbarData.iconColor : 'black'}}.png"></image>
+  </view>
+</view>
+
+<!-- 占位和下拉功能，下拉时候文件json增加enablePullDownRefresh为true -->
+<view class="navbar-loading" style='height:{{navbarHeight}}px;line-height:{{navbarHeight}}px;'>
+  <text>加载中...</text>
+</view>

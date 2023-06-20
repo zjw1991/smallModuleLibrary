@@ -1,0 +1,34 @@
+<headerNavbar navbar-data='{{navbarData}}'></headerNavbar>
+
+
+<view class='wrap'>
+  <view class='other' style="height:300rpx;">顶部内容</view>
+  <!--可以修改组件sticky来控制tab距离顶部距离-->
+  <sticky sync init scrollTop="{{scrollTop}}" tabList="{{navList}}">
+
+    <sticky-item>
+        <view class='box' style="margin-top:{{ navBarHeight > 60 ? 60 : 40 }}rpx">
+          <view>1111111111111111111111</view>
+          <view>2222222222222222222</view>
+          <view>3333333333333333333333</view>
+          <view style="height:1000rpx;border-bottom:1px solid blue;">44444444444444444444444</view>
+        </view>
+      </sticky-item>
+
+      <sticky-item>
+        <view class='box' style="margin-top:{{ navBarHeight > 60 ? 60 : 40 }}rpx">
+          <view>4444444444444444444</view>
+          <view style="height:1000rpx;border-bottom:1px solid blue;">333333333333333333333</view>
+        </view>
+      </sticky-item>
+
+      <sticky-item>
+        <view class='box' style="margin-top:{{ navBarHeight > 60 ? 60 : 40 }}rpx">
+          <view>6666666666666666666</view>
+          <view style="height:2000rpx;border-bottom:1px solid blue;">5555555555555555555</view>
+        </view>
+      </sticky-item>
+    
+  </sticky>
+  
+</view>

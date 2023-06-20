@@ -1,0 +1,6 @@
+
+
+<button bindtap='onAuthLocation' >授权并获取位置</button>
+
+<view>经纬度：{{location}}</view>
+

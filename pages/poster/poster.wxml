@@ -1,0 +1,44 @@
+
+
+<view bindtap="showExclusiveQRcode">生成海报</view>
+
+<!--海报mask-->
+<view class="mask" catchtouchmove="true" bindtap="onClickHide" hidden="{{!showPosterPop}}"></view>
+
+<!--海报部分-->
+<view class="poster_wrap" hidden="{{!showPosterPop}}" catchtouchmove="true">
+
+    <!--canvas-->
+    <view class="canvas-box">
+      <!-- <canvas type="2d" id="mycanvas" style="width: 350px; height: 560px;position:absolute;top:0;left:0;"></canvas> -->
+      <canvas type="2d" id="mycanvas" style="width: 380px; height: 562px;position:absolute;left:9999rpx;"></canvas>
+      <canvas type="2d" id="mycanvas2" style="width: 380px; height: 562px;position:absolute;left:9999rpx;"></canvas>
+      <canvas type="2d" id="mycanvas3" style="width: 380px; height: 562px;position:absolute;left:9999rpx;"></canvas>
+    </view>
+
+    <!--生成的海报图-->
+    <view class="scroll_box"> 
+      <scroll-view scroll-x="true" bindscroll="poster_scroll" style="width: 100%">
+        <view class="item_list" >
+          <image class="cavans_image"  bindtap="previewImg" show-menu-by-longpress='true' mode="widthFix" src="{{imagePath}}"></image>
+        </view>
+        <view class="item_list" >
+          <image class="cavans_image"  bindtap="previewImg" show-menu-by-longpress='true' mode="widthFix" src="{{imagePath2}}"></image>
+        </view>
+        <view class="item_list" >
+          <image class="cavans_image"  bindtap="previewImg" show-menu-by-longpress='true' mode="widthFix" src="{{imagePath3}}"></image>
+        </view>
+      </scroll-view>
+    </view>
+
+
+    <!--额外提示icon-->
+    <view hidden="{{!show_bottom_info}}" class="poster_info">
+      <image class="poster_info_btn" src="../../images/haibaoTopArrow.png"  mode="widthFix" />
+      <view>长按图片可保存或分享</view>
+    </view>
+
+</view>
+
+
+<!--遗留问题：头像设置圆形就会导致其他无法绘制，生成的cavans原图右边border没有圆角-->

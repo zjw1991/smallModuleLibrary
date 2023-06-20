@@ -1,0 +1,1 @@
+<view class="mask_pop" hidden="{{!show_mask}}"></view>

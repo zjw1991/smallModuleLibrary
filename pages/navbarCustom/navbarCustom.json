@@ -1,0 +1,6 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "headerNavbarCustom": "../../components/navbarCustom/navbar"
+  }
+}

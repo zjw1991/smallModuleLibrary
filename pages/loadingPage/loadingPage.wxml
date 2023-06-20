@@ -1,0 +1,8 @@
+
+
+<loading id='loading'></loading>
+
+<view class="btnWrap">
+  <view bindtap="showDialog">加载loading</view>
+  <view bindtap="hideDialog">隐藏loading</view>
+</view>

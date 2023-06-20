@@ -1,0 +1,11 @@
+<view class="card">
+  <block wx:for="{{card}}" wx:key="index" >
+      <view data-index="{{index}}"  data-item="{{item}}" bindtap="openCard" class="project item{{index}} {{item.isMove ? 'ani' : ''}} {{item.status==1 ? 'flip' : ''}}" >
+        <image class="front" src="https://www.sunniejs.cn/static/weapp/card.png" />
+        <view class="back">
+           <image src="{{item.img}}" />
+        </view>
+    </view>
+  </block>
+</view>
+

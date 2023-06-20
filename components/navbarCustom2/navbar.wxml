@@ -1,0 +1,14 @@
+<view class='navbar-wrap' style='height:{{navbarHeight}}px;padding-top:{{statusBarHeight}}px;background:{{navbarData.bgColor}};'>  
+
+  <view class="navbar-icon" 
+    wx:if='{{navbarData.showCapsule ? true : false}}'
+    style="top:{{navbarBtn.top + statusBarHeight}}px;left:{{navbarBtn.right}}px;height:{{navbarBtn.height}}px;line-height:{{navbarBtn.height}}px"> 
+    
+    <!--文字内容-->
+      <view bindtap="_selectStore" style='padding-left:15rpx;color:{{navbarData.nameColor}};font-size:{{navbarData.nameFontSize}}px'>
+        <text class="name">{{navbarData.storeName}}</text> 
+        <text wx:if="{{navbarData.showRightIcon ? true : false}}"> > </text>
+      </view>
+        
+  </view>
+</view>

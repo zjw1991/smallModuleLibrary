@@ -1,0 +1,35 @@
+.textareaWrap{
+  width:90%;
+  height: auto;
+  /* border: 1rpx solid red; */
+  border: 1rpx solid gainsboro;
+  position:relative;
+  padding-bottom:50rpx;
+  margin:0 auto;
+
+}
+.areas{
+  width:100%;
+  height:152rpx;
+  font-size: 30rpx;
+  text-indent: 28rpx;
+  /* border: 1rpx solid gainsboro; */
+  padding-top: 30rpx;
+  margin: 0 auto;
+  overflow: hidden;   
+  position: relative; 
+}
+.currentWordNumber{
+  font-size: 28rpx;
+  color: gray;
+  position: absolute;
+  right:10rpx;
+  bottom:10rpx;
+}
+.tips{
+   font-size: 28rpx;
+   position: absolute;
+   left:20rpx;
+   bottom:10rpx;
+   color: #FF6600;
+}

@@ -1,0 +1,4 @@
+
+
+
+<view bindtap="toMapFn">点击导航</view>

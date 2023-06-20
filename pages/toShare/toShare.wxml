@@ -1,0 +1,9 @@
+
+
+<loading id='dialog'></loading>
+
+<image src="{{img}}"></image>
+
+<button type="default"  bindtap="showShareMenu">开启系统分享</button>
+<button type="warn" bindtap="hideShareMenu">关闭系统分享</button>
+<button type="primary" open-type="share" data-name="pageShare">内部页面分享</button>

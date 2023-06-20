@@ -1,0 +1,19 @@
+
+.navbar{
+  height:100rpx;
+  border:1px solid cyan;
+}
+.navFixed{
+  position:fixed;
+  width:100%;
+}
+.navInitial{
+  position: initial;
+}
+/* 替身样式 */
+.navShow{
+  display: block;
+}
+.navHide{
+  display: none;
+}

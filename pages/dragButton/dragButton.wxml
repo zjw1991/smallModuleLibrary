@@ -1,0 +1,14 @@
+<!--可拖动按钮控件表-->
+<!--buttonStart和buttonEnd一定不能用catch事件，否则按钮点击事件会失效-->
+<view bindtap="" class="btn_Suspension"  catchtouchmove="buttonMove" bindtouchstart="buttonStart" bindtouchend="buttonEnd" style="top:{{buttonTop}}px;left:{{buttonLeft}}px;">
+  <image class="Suspension_logo" src="../../images/home.png"></image>
+
+  <!--数字角标-->
+  <view wx:if="{{corner_data==0}}"></view>
+  <view wx:else>
+    <view class="cornorMark">
+      <text>{{corner_data}}</text>
+    </view>
+  </view>
+  
+</view>

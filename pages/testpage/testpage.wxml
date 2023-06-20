@@ -1,0 +1,4 @@
+
+<view style="border:1px solid blue;height:800rpx;"></view>
+<input type="text" placeholder="请输入" confirm-type="go" 	placeholder-class="placeholderclass"/>
+<view style="border:1px solid blue;height:1800rpx;"></view>

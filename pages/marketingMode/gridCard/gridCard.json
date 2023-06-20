@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "sol-grid-card": "../../../components/grid-card/index"
+  }
+}

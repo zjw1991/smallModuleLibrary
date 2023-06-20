@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "headerNavbarCustom": "../../components/navbarCustom2/navbar",
+    "van-popup": "../../miniprogram_npm/@vant/weapp/popup/index",
+    "van-cell": "../../miniprogram_npm/@vant/weapp/cell/index",
+    "van-cell-group": "../../miniprogram_npm/@vant/weapp/cell-group/index"
+  }
+}

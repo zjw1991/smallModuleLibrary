@@ -1,0 +1,7 @@
+page{
+  --theme-color:#EF114C;
+}
+ 
+.title{
+  color:var(--theme-color)
+}

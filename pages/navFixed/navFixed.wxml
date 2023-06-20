@@ -1,0 +1,11 @@
+<headerNavbar navbar-data='{{navbarData}}'></headerNavbar>
+
+<view class="main-content">
+  <!-- 头部内容 -->
+  <view style="height:{{headHeight}}px;border:1px solid blue;">头部内容</view>
+  <!-- nav导航 -->
+  <view class="navbar {{scrollTop>(headHeight) ? 'navShow' : 'navHide'}}" style="">nav导航1</view><!--替身-->
+  <view class="navbar {{scrollTop>(headHeight) ? 'navFixed' : 'navInitial'}}" style="top:{{height}}px">nav导航2</view>
+  <!-- 正文部分 -->
+  <view style="height:2000rpx;border:1px solid #ccc;">正文部分</view>
+</view>

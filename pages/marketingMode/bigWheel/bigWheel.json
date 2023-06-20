@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "sol-wheel": "../../../components/wheel/index"
+  }
+}

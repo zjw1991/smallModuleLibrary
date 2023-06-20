@@ -1,0 +1,3 @@
+<camera class="cameraWrap" device-position="back" flash="off" binderror="error" >
+    <view class="text">将银行卡放在此区域{{timeNum}}</view>
+</camera>

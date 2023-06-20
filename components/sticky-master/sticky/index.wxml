@@ -1,0 +1,10 @@
+<view class="i-sticky i-class">
+  <view class="header" style="top:{{navbarHeight}}px">
+    <tabs current="{{currentTab}}" bind:change="onTabsChange" i-class="custom-sticky-tabs" color="#FC663B">
+      <block wx:for="{{tabList}}" wx:key="{{item.title}}">
+        <tab i-class="custom-sticky-tab" i-class-title="custom-sticky-tab-title" i-class-tab-bar="custom-sticky-tab-bar" title="{{item.title}}" key="{{index}}"></tab>
+      </block>
+    </tabs>
+  </view>
+  <slot></slot>
+</view>

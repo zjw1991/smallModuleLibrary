@@ -1,0 +1,22 @@
+
+
+
+<!-- 中间金刚区目录图标区域 -->
+<view class="second-module-allicon">
+        <scroll-view class="nav-bar" scroll-x  bindscroll="scroll">
+          <!-- 使用flex布局实现横向滚动，在scroll-view里加一层容器包裹，才会出现滚动效果 -->
+          <view class="nav-bar-wrap">
+            <block wx:for="{{secIcons}}" wx:key='key'>
+              <view class="nav-bar-item" bindtap="onNavbarItem" data-id='{{item.catalogId}}' data-name="{{item.name}}">
+                <image src="{{item.imgUrl}}" />
+                <text>{{item.name}}</text>
+              </view>
+            </block>
+          </view>
+         </scroll-view>
+           <!-- 模拟进度条 -->
+         <view class="slider" style="width:{{scrollWidth}}rpx">
+           <view class="slider-inside-location" style="left:{{left}};width:{{activeScrollWidth}}rpx"></view>
+         </view>
+      </view>
+

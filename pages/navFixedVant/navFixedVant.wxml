@@ -1,0 +1,24 @@
+<headerNavbar navbar-data='{{navbarData}}'></headerNavbar>
+
+<view class="content">
+
+  <image src="../../images/banner1.png" style="width:100%;"  mode="widthFix" />
+
+  <!--tab和banner-->
+  <view class="tabWrap">
+    tab111111
+  </view>
+
+  <!--粘性fixed-->
+  <van-sticky offset-top="{{ navBarHeight }}" z-index="{{0}}">
+    默认排序
+  </van-sticky>
+
+  <!--list-->
+  <view class="listWrap">
+      list22222
+  </view>
+
+  <view>到底了1111</view>
+  
+</view>

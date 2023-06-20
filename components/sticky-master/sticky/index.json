@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "tabs": "/components/sticky-master/tabs/index",
+    "tab": "/components/sticky-master/tab/index"
+  }
+}

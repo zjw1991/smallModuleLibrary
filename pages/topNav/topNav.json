@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "sol-scoll-nav": "../../components/scoll-nav/index",
+    "sol-icon-container": "../../components/icon-container/index"
+  }
+}

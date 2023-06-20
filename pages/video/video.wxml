@@ -1,0 +1,10 @@
+
+
+<!-- 参考文档https://developers.weixin.qq.com/miniprogram/dev/component/video.html -->
+<video 
+  src="https://bucketxtr-test-video.oss-cn-shanghai.aliyuncs.com/postVideo20211022103041000040.mp4"
+  controls="{{false}}"
+  initial-time='0.01'
+  show-center-play-btn="{{true}}"
+  object-fit="cover">
+</video>

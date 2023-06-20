@@ -1,0 +1,4 @@
+<headerNavbar navbar-data='{{navbarData}}'></headerNavbar>
+<view class="container">
+    <canvas canvas-id="areaCanvas" class="wxCharts" bindtouchstart="touchHandler"></canvas>
+</view>

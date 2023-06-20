@@ -1,0 +1,65 @@
+/* 图标模块 */
+.second-module-allicon{
+  background: #ffffff;
+  border-radius:8px;
+  position: relative;
+  height: 380rpx;
+  overflow : hidden;
+}
+
+scroll-view {
+  white-space: nowrap;
+}
+/* 去除滚动条 */
+::-webkit-scrollbar {
+  display:none;
+  width:0;
+  height:0;
+  color:transparent;
+}
+.nav-bar-wrap {
+  display: flex;
+  flex-flow: column wrap;
+  height: 330rpx;
+}
+
+/* 菜单 */
+.nav-bar-item {
+  width: 175rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 28rpx;
+}
+.nav-bar-item image {
+  display: block;
+  height: 88rpx;
+  width: 88rpx;
+  margin: 0;
+}
+.nav-bar-item text {
+  margin-top: 8rpx;
+  line-height: 34rpx;
+  color:rgba(51,51,51,1);
+  font-size: 24rpx;
+}
+
+/* 滚动指示条 */
+.slider {
+  position: absolute;
+  bottom: 20rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 6rpx;
+  border-radius: 3rpx;
+  background: #ccc;
+}
+
+/* 滑块滑动模拟 */
+.slider-inside-location {
+  position: absolute;
+  left:0;
+  height: 100%;
+  border-radius: 3rpx;
+  background-color: #31B877;
+}

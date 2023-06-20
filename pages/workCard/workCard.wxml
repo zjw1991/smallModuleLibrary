@@ -1,0 +1,12 @@
+<view>
+  openid: <input bindinput="openidInput" style="border:1px solid #ccc;" type="text" placeholder="请输入当前微信用户的openid"/>
+  token：<input bindinput="tokenInput" style="border:1px solid #ccc;" type="text" placeholder="请输入token"/>
+
+  商户单号：<input bindinput="authenticate_numberInput" style="border:1px solid #ccc;" type="text" placeholder="请输入商户单号"/>
+</view>
+
+
+<button bindtap="jump1">授权务工卡</button>
+<button bindtap="jump2">查看务工卡</button>
+<button bindtap="jump3">务工卡人脸核身</button>
+<button bindtap="jump4">务工卡一键授权并核身</button>

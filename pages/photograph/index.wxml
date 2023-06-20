@@ -1,0 +1,1 @@
+<button type="normal" bindtap="onAuthCamera">去拍照识别</button>

@@ -1,0 +1,16 @@
+
+
+<view class="main-content">
+  <dialog id='dialog' 
+  title='删除面试数据' 
+  content='面试数据删除后不可恢复，请谨慎操作' 
+  errorTips='{{errorTipsVal}}'
+  needErrorTips='{{needErrorTips}}'
+  cancelText='取消' 
+  confirmText='删除'
+  bind:cancelEvent="_cancelEvent"  
+  bind:confirmEvent="_confirmEvent">
+  </dialog>
+
+  <button type="primary" bindtap="showDialog"> ClickMe! </button>
+</view>

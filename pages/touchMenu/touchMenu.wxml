@@ -1,0 +1,35 @@
+
+
+
+<!--pages/scrollMenu/scrollMenu.wxml-->
+<swiper class="swiper" circular="{{circular}}"  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" current="{{swiperCurrent}}" indicator-dots="{{indicatorDots}}" indicator-color="{{beforeColor}}" indicator-active-color="{{afterColor}}" style="z-index:1000">
+  <swiper-item>
+    <block wx:for="{{scrollOne}}" wx:key="key">
+      <view class='fl_right' hover-class="none" bindtap="gotoPage" data-path="{{item.url}}">
+        <view class="swiper-box">
+          <image class="navimg" src="{{item.icon}}"></image>
+          <text class="navtext">{{item.text}}</text>
+        </view> 
+      </view>
+    </block>
+  </swiper-item>
+
+  <swiper-item>
+    <view class='fl_right' hover-class="none" wx:for="{{scrollTwo}}" wx:for-item="twoItem" bindtap="gotoPage" data-path="{{twoItem.url}}" wx:key="{{twoItem.url}}">
+      <view class="swiper-box">
+        <image class="navimg" src="{{twoItem.icon}}"></image>
+        <text class="navtext">{{twoItem.text}}</text>
+      </view> 
+    </view>
+  </swiper-item>
+
+  <swiper-item>
+    <view class='fl_right' hover-class="none" wx:for="{{scrollThree}}" wx:for-item="threeItem" wx:key="{{threeItem.url}}"
+    bindtap="gotoPage" data-path="{{threeItem.url}}">
+      <view class="swiper-box">
+        <image class="navimg" src="{{threeItem.icon}}"></image>
+        <text class="navtext">{{threeItem.text}}</text>
+      </view> 
+    </view>
+  </swiper-item>
+</swiper>

@@ -1,0 +1,55 @@
+page{
+  background:#fff;
+}
+.flex{
+  display: flex;
+  display: -webkit-flex;
+  font-size:28rpx;
+
+}
+.top{
+  width: 750rpx;
+  position: fixed;
+  z-index: 1001;
+  color:rgba(0, 0, 0, 0.4);
+  padding:28rpx 0 28rpx 0;
+  background:#f6f6f6;
+}
+.top_left{
+  background: #f6f6f6;
+  z-index: 1001;
+
+  text-align: center;
+}
+.top_right{
+  text-align: center;
+}
+/* 表头样式 */
+.top_info{
+  background: #f6f6f6;
+  z-index: 101;
+}
+.perch{
+  width: 750rpx;
+  padding:28rpx 0 28rpx 0;
+}
+.bottom{
+  width: 750rpx;
+  margin-top: 50rpx;
+}
+.bottom_left{
+  text-align: center;
+}
+.bottom_left_date{
+  background:#fff;
+  padding:28rpx 0 28rpx 0;
+  text-align: center;
+}
+.bottom_right{
+  text-align: center;
+}
+.bottom_right_ver{
+  padding:28rpx 0 28rpx 0;
+}
+.bottom_right_ver_info{
+}
